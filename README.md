@@ -43,7 +43,9 @@ An IoT and machine-learning project designed to monitor agricultural motors, det
 
 ## Portfolio Preview
 
-![Dhinesh V developer portfolio homepage](screenshots/portfolio-preview.png)
+<p align="center">
+  <img src="screenshots/portfolio-preview.png" alt="Dhinesh V Developer Portfolio" width="700" />
+</p>
 
 **[View the live portfolio](https://placement-portfolio-ashy.vercel.app/)**
 
