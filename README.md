@@ -41,15 +41,13 @@ An IoT and machine-learning project designed to monitor agricultural motors, det
 
 **Technologies:** ESP32, current/voltage/temperature sensors, Python, machine learning, IoT.
 
-## Screenshots
+## Portfolio Preview
 
-A screenshot will be added here after a clean capture of the deployed homepage is available. For now, explore the **[live portfolio](https://placement-portfolio-ashy.vercel.app/)**.
+![Dhinesh V developer portfolio homepage](screenshots/portfolio-preview.png)
 
-To add one later, save a screenshot as `public/portfolio-preview.png` and replace this paragraph with:
+**[View the live portfolio](https://placement-portfolio-ashy.vercel.app/)**
 
-```markdown
-![Portfolio homepage](public/portfolio-preview.png)
-```
+The screenshot is generated from the deployed website by the repository's GitHub Actions workflow.
 
 ## Run Locally
 
