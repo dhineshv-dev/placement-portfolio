@@ -1,0 +1,35 @@
+name: Capture portfolio preview
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/portfolio-preview.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser
+        run: npx --yes playwright@1.56.1 install --with-deps chromium
+      - name: Capture deployed homepage
+        run: |
+          mkdir -p screenshots
+          node -e "console.log('Capturing live site')"
+          npx --yes playwright@1.56.1 screenshot --browser chromium --viewport-size "1592,928" --wait-for-timeout 2500 --full-page https://placement-portfolio-ashy.vercel.app/ screenshots/portfolio-preview.png
+      - name: Commit screenshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add screenshots/portfolio-preview.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Add portfolio homepage screenshot"
+            git push
+          fi
