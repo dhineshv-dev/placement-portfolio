@@ -17,7 +17,7 @@ export const profile = {
   ],
   projects: [
     { number: '01', name: 'ShopEase', type: 'Spring Boot E-commerce Application', description: 'An e-commerce application featuring a product catalog, user authentication, shopping cart and order management, with secure REST APIs.', tags: ['Java', 'Spring Boot', 'Spring Security', 'MySQL', 'JPA / Hibernate'], github: null },
-    { number: '02', name: 'Smart Motor', type: 'AI-Based Agriculture Motor Protection', description: 'An IoT and machine-learning system for monitoring agricultural motors, detecting abnormal operating conditions and providing early fault alerts.', tags: ['ESP32', 'Python', 'Machine Learning', 'IoT', 'Sensors'], github: 'https://github.com/dhineshv-dev/SmartAgriculture' }
+    { number: '02', name: 'Smart Motor', type: 'AI-Based Agriculture Motor Protection', description: 'An IoT and machine-learning system for monitoring agricultural motors, detecting abnormal operating conditions and providing early fault alerts.', tags: ['ESP32', 'Python', 'Machine Learning', 'IoT', 'Sensors'], github: null }
   ],
   achievements: [{ name: 'Naukri Campus Young Turks 2026', detail: '91.64 percentile in the national-level skill contest', date: 'October 2026' }]
 };
