@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {font-family:Inter,system-ui,sans-serif;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:#080d1b;color:#dbe4f0;overflow-x:hidden}
+::selection{background:#7c3aed;color:white}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 90% 5%,rgba(124,58,237,.12),transparent 38%),radial-gradient(ellipse at 0% 75%,rgba(14,165,233,.07),transparent 45%)}
+@layer components{
+.container-width{@apply mx-auto max-w-6xl px-6 sm:px-8}
+.section{@apply container-width py-20 sm:py-28}
+.card{@apply rounded-3xl border border-white/10 bg-panel/70 p-7 sm:p-9;box-shadow:0 18px 60px rgba(0,0,0,.12)}
+.nav-link{@apply text-sm font-medium text-slate-400 transition-colors hover:text-white}
+.btn-primary{@apply inline-flex items-center justify-center gap-2 rounded-xl bg-violet-600 px-5 py-3 font-semibold text-white transition-all hover:bg-violet-500 hover:-translate-y-0.5;box-shadow:0 12px 32px rgba(124,58,237,.22)}
+.btn-outline{@apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 px-5 py-3 font-semibold text-white transition-all hover:border-violet-400/70 hover:bg-white/5 hover:-translate-y-0.5}
+.social-link{@apply inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/15 text-slate-300 transition-all hover:border-violet-400/70 hover:bg-violet-500/10 hover:text-violet-300}
+.tag{@apply rounded-lg border border-violet-400/20 bg-violet-500/10 px-3 py-1.5 text-xs font-medium text-violet-300}
+.gradient-text{@apply bg-gradient-to-r from-white via-violet-300 to-sky-300 bg-clip-text text-transparent}
+}
+.grid-overlay{background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:40px 40px;mask-image:linear-gradient(to bottom,black,transparent)}
+.glow-orb{position:absolute;border-radius:50%;filter:blur(65px);pointer-events:none;animation:drift 11s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translate3d(0,0,0)}to{transform:translate3d(28px,-26px,0)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes appear{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.animate-appear{animation:appear .85s both}
+.float-card{animation:float 6s ease-in-out infinite}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .75s ease,transform .75s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.project-card{transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.project-card:hover{transform:translateY(-7px);border-color:rgba(167,139,250,.4);box-shadow:0 28px 80px rgba(0,0,0,.25)}
+.code-line{display:block;white-space:nowrap}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
