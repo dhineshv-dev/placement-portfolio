@@ -29,11 +29,11 @@ I'm Dhinesh V, a Computer Science and Engineering student (2024–2028) aspiring
 
 ## Featured Projects
 
-### ShopEase — Spring Boot E-commerce Application
+### ShopEasy — Spring Boot Backend Learning Project
 
-An e-commerce application featuring product catalog, authentication, shopping cart, order management, and REST APIs.
+Created an initial Spring Boot project while learning backend development. The current version includes a Java application entry point, Maven configuration, Spring Web MVC dependencies, and a basic application-context test. Product APIs, authentication, cart, orders, and database integration are not yet implemented.
 
-**Technologies:** Java, Spring Boot, Spring Security, Spring Data JPA/Hibernate, MySQL, HTML, CSS, JavaScript.
+**Technologies:** Java, Spring Boot, Spring Web MVC, Maven, JUnit.
 
 ### Smart Motor — Simulation-Based Agriculture Monitoring
 
