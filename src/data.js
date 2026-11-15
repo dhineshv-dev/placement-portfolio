@@ -16,7 +16,7 @@ export const profile = {
     { category: 'Tools & IoT', items: ['Git', 'GitHub', 'VS Code', 'LeetCode', 'Arduino IDE', 'ESP32', 'IoT Sensors'] }
   ],
   projects: [
-    { number: '01', name: 'ShopEase', type: 'Spring Boot E-commerce Application', description: 'An e-commerce application featuring a product catalog, user authentication, shopping cart and order management, with secure REST APIs.', tags: ['Java', 'Spring Boot', 'Spring Security', 'MySQL', 'JPA / Hibernate'], github: null },
+    { number: '01', name: 'ShopEasy', type: 'Spring Boot Backend Learning Project', description: 'An initial Spring Boot project created while learning backend development, with Maven configuration, Spring Web MVC dependencies, and a basic application-context test. E-commerce features and database integration are not yet implemented.', tags: ['Java', 'Spring Boot', 'Spring Web MVC', 'Maven', 'JUnit'], github: null },
     { number: '02', name: 'Smart Motor', type: 'Simulation-Based Agriculture Monitoring', description: 'A software prototype using simulated sensor readings, rule-based motor protection, anomaly detection, and a Tamil/English voice assistant. ESP32 firmware and physical sensor integration are planned.', tags: ['Spring Boot', 'React', 'Python', 'MySQL', 'Docker', 'Ollama'], github: null, overview: 'https://github.com/dhineshv-dev/dhineshv-dev/blob/main/projects/smart-motor.md' }
   ],
   achievements: [{ name: 'Naukri Campus Young Turks 2026', detail: '91.64 percentile in the national-level skill contest', date: 'October 2026' }]
