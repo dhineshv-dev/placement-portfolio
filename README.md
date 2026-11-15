@@ -35,11 +35,13 @@ An e-commerce application featuring product catalog, authentication, shopping ca
 
 **Technologies:** Java, Spring Boot, Spring Security, Spring Data JPA/Hibernate, MySQL, HTML, CSS, JavaScript.
 
-### Smart Motor — AI-Based Agriculture Motor Protection
+### Smart Motor — Simulation-Based Agriculture Monitoring
 
-An IoT and machine-learning project designed to monitor agricultural motors, detect abnormal operating conditions, and provide early fault alerts.
+A simulation-based prototype with a Python sensor simulator, Spring Boot API, React dashboard, anomaly detection, and a Tamil/English voice assistant. ESP32 firmware, physical sensor integration, and relay control are planned and not included.
 
-**Technologies:** ESP32, current/voltage/temperature sensors, Python, machine learning, IoT.
+**Technologies:** Java, Spring Boot, MySQL, React, Python, Flask, scikit-learn, Docker Compose, Ollama.
+
+[Read the public project overview](https://github.com/dhineshv-dev/dhineshv-dev/blob/main/projects/smart-motor.md). The source repository is private.
 
 ## Portfolio Preview
 
